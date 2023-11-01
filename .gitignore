@@ -1,3 +1,7 @@
+# any intermediate folders will be called build
+*/build/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
