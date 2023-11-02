@@ -1,15 +1,17 @@
 
-# Introduction to worrld of Generative AI
+# 1. Introduction to worrld of Generative AI
 
-- [Introduction to worrld of Generative AI](#introduction-to-worrld-of-generative-ai)
-  - [what types of AI models exists ?](#what-types-of-ai-models-exists-)
-  - [which are used for generative AI ?](#which-are-used-for-generative-ai-)
-  - [what is generative AI and what main task it is designed for ?](#what-is-generative-ai-and-what-main-task-it-is-designed-for-)
-  - [is there any industry standards and classification for generative AI ?](#is-there-any-industry-standards-and-classification-for-generative-ai-)
-  - [any recomended reading about generative AI ?](#any-recomended-reading-about-generative-ai-)
+- [1. Introduction to worrld of Generative AI](#1-introduction-to-worrld-of-generative-ai)
+  - [1.1. what types of AI models exists ?](#11-what-types-of-ai-models-exists-)
+  - [1.2. which are used for generative AI ?](#12-which-are-used-for-generative-ai-)
+  - [1.3. what is generative AI and what main task it is designed for ?](#13-what-is-generative-ai-and-what-main-task-it-is-designed-for-)
+  - [1.4. is there any industry standards and classification for generative AI ?](#14-is-there-any-industry-standards-and-classification-for-generative-ai-)
+  - [1.5. any recomended reading about generative AI ?](#15-any-recomended-reading-about-generative-ai-)
+  - [1.6. what is relationship between  generative AI and large language models ?](#16-what-is-relationship-between--generative-ai-and-large-language-models-)
+  - [1.7. what AI model types are suitable for research type of task that can produce new content, link context between many entities and provide research results from information stored in model based on question asked ?](#17-what-ai-model-types-are-suitable-for-research-type-of-task-that-can-produce-new-content-link-context-between-many-entities-and-provide-research-results-from-information-stored-in-model-based-on-question-asked-)
 
 
-## what types of AI models exists ?
+## 1.1. what types of AI models exists ?
 
 AI encompasses a wide range of models and techniques. Here's a broad overview of the types of AI models and approaches:
 
@@ -55,7 +57,7 @@ AI encompasses a wide range of models and techniques. Here's a broad overview of
 
 This is a high-level overview, and within each of these categories, there are numerous variations and specific models. The optimal model or approach often depends on the specific problem, the available data, and the desired outcomes.
 
-## which are used for generative AI ?
+## 1.2. which are used for generative AI ?
 
 Generative AI refers to algorithms and models that can generate new data that is similar to some given data. Here are the main models and techniques used for generative tasks:
 
@@ -96,7 +98,7 @@ Generative AI refers to algorithms and models that can generate new data that is
 
 It's worth noting that the choice of generative model often depends on the specific type of data you're working with (e.g., images, text, audio) and the desired properties of the generated data (e.g., resolution, diversity, fidelity).
 
-## what is generative AI and what main task it is designed for ?
+## 1.3. what is generative AI and what main task it is designed for ?
 
 Generative AI refers to a subset of artificial intelligence models and techniques that are designed to generate new content. This content can take many forms, including images, music, text, or even videos. The generated content is typically modeled after some existing data, such that the new content bears similarity to the training data, but is not a direct replica of any specific piece of that data.
 
@@ -137,7 +139,7 @@ Generative AI refers to a subset of artificial intelligence models and technique
 
 The common thread across all these applications is the ability of generative AI to produce new content or data. In many cases, this capability is harnessed to either directly create something novel or to support other tasks (like data augmentation supporting machine learning training). The advances in deep learning, especially with models like GANs (Generative Adversarial Networks) and VAEs (Variational Autoencoders), have significantly propelled the capabilities and applications of generative AI in recent years.
 
-## is there any industry standards and classification for generative AI ? 
+## 1.4. is there any industry standards and classification for generative AI ? 
 
 As of my last training cut-off in January 2022, there isn't a universally accepted industry standard for classifying generative AI models. However, the field does have some general categorizations based on model architecture, functionality, and application. 
 
@@ -170,7 +172,7 @@ As of my last training cut-off in January 2022, there isn't a universally accept
 It's worth noting that the field of AI, and especially generative AI, is rapidly evolving. While some categorizations and terminologies are widely accepted, the nuances can vary based on the researcher's or institution's preferences. Industry standards and best practices may emerge as the field matures and as applications of generative AI become more widespread in the industry. If you're interested in the latest standards and classifications, consulting recent literature, conferences (like NeurIPS, ICML, or CVPR), and industry groups or consortiums is a good approach.
 
 
-## any recomended reading about generative AI ?
+## 1.5. any recomended reading about generative AI ?
 
 Certainly! Generative AI is a rich and expanding field, and there are many resources ranging from introductory material to advanced research papers. Here's a mix of resources for different levels of familiarity:
 
@@ -199,4 +201,58 @@ Certainly! Generative AI is a rich and expanding field, and there are many resou
    - **Reddit's r/MachineLearning**: A community that often discusses the latest trends, papers, and developments in machine learning, including generative AI.
 
 Starting with some of the introductory resources and then delving into research papers can help build a comprehensive understanding of generative AI.
+
+## 1.6. what is relationship between  generative AI and large language models ?
+
+Generative AI and large language models (LLMs) share a foundational relationship: large language models are a specific type of generative AI. Let's break down the relationship:
+
+1. **Generative AI**:
+   - **Definition**: Generative AI encompasses algorithms and models designed to generate new content. This content can be images, text, music, video, or any kind of data.
+   - **Examples**: This includes models like Generative Adversarial Networks (GANs) for image generation, Variational Autoencoders (VAEs) for various generative tasks, and of course, autoregressive models for text generation.
+
+2. **Large Language Models (LLMs)**:
+   - **Definition**: LLMs are neural network-based models specifically designed and trained to generate and understand text. They are a subset of generative models tailored to work with language.
+   - **Training**: LLMs are trained on vast amounts of textual data. The "large" in LLM often refers to the number of parameters in the model, which can range from hundreds of millions to tens of billions, or even more.
+   - **Examples**: GPT-3 (and its predecessors GPT-2 and GPT) by OpenAI is a notable example. BERT by Google, while primarily designed for understanding text (and not primarily for generation), can also be considered under the umbrella of large language models.
+
+**Relationship**:
+
+- **Subset Relationship**: All LLMs are generative AI models when used for text generation, but not all generative AI models are LLMs. For instance, a GAN generating art is a generative model but not a language model.
+  
+- **Shared Techniques**: LLMs often employ techniques and architectures developed in the broader generative AI community. For instance, the Transformer architecture, which is the backbone of many LLMs like GPT-3, is used in various generative tasks beyond text.
+
+- **Generative Capacity**: LLMs like GPT-3 are generative in nature, meaning they can produce coherent and contextually relevant passages of text, making them powerful tools for a range of applications, from chatbots to content creation.
+
+- **Evolution of LLMs**: Initially, smaller language models were used for specific tasks like translation or sentiment analysis. As neural network architectures evolved and computational capacity increased, these models grew in size and capability, leading to the LLMs we see today that can generate long passages of text, answer questions, write code, and more.
+
+In summary, while generative AI is a broad domain encompassing any model that can produce new content, large language models represent a specialized subset focused on language generation and comprehension.
+
+## 1.7. what AI model types are suitable for research type of task that can produce new content, link context between many entities and provide research results from information stored in model based on question asked ?
+
+When you're looking for an AI model to handle research-type tasks, produce new content, link context between many entities, and provide research results, you're likely looking for models that can manage large-scale information retrieval, comprehension, contextual understanding, and generation. Here are suitable types of AI models for such tasks:
+
+1. **Transformer-based Language Models**: 
+   - **GPT (Generative Pre-trained Transformer)**: Models like GPT-3 or even its predecessor GPT-2 can generate coherent text and can be fine-tuned for specific tasks. They're capable of providing contextual answers and generating content based on the information they've been trained on.
+   - **BERT (Bidirectional Encoder Representations from Transformers)** and its variants like **RoBERTa, DistilBERT, etc.**: Initially designed for understanding text, BERT models can be fine-tuned for question-answering tasks and can understand context bidirectionally.
+   
+2. **Retrieval-Augmented Models**:
+   - **RAG (Retrieval-Augmented Generation)**: Combines the power of large language models with external retrieval or database mechanisms. The model first retrieves relevant document passages and then generates an answer using the retrieved content. This is useful when you have a specific database or corpus you want the model to refer to.
+   
+3. **Knowledge Graphs**:
+   - While not a neural model in the traditional sense, knowledge graphs represent entities and their relationships. They can be used alongside neural models to provide context-rich answers. For example, Google uses knowledge graphs to enhance its search results.
+   
+4. **Zero-shot and Few-shot Learning Models**:
+   - Large language models, especially ones like GPT-3, can perform tasks even when they haven't been explicitly trained on them. You can pose research questions in a zero-shot (no examples provided), one-shot (one example provided), or few-shot (a few examples provided) manner, and the model will attempt to provide relevant answers.
+   
+5. **Neural Information Retrieval Models**:
+   - These are models designed to retrieve relevant pieces of information from a large corpus based on a query. They can be combined with generative models to first find the most relevant info and then produce a coherent answer.
+
+6. **Document Embedding Models**:
+   - Models like **Doc2Vec** or sentence/paragraph embeddings from models like **Sentence-BERT** can be used to understand and retrieve relevant documents or passages from a corpus based on semantic similarity to a given query.
+
+7. **Attention Mechanisms and Memory Networks**:
+   - Attention allows models to focus on specific parts of the input data, which is crucial for tasks requiring understanding and linking context. Memory Networks, on the other hand, have an external memory component that can be useful for tasks requiring the model to remember and use past information.
+
+When deploying these models for research tasks, it's essential to remember that while they can provide information based on their training data and even make contextual links, they don't "understand" content in the same way humans do. It's always a good idea to validate the results and use the models as a tool to assist researchers rather than replace the critical thinking and analysis that human researchers bring to the table.
+
 
