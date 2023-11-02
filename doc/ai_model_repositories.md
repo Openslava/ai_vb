@@ -1,6 +1,12 @@
-# Model libraries
+# 1. Model libraries
 
-## what are the most famous AI model repositories?
+- [1. Model libraries](#1-model-libraries)
+  - [1.1. what are the most famous AI model repositories?](#11-what-are-the-most-famous-ai-model-repositories)
+  - [1.2. what model are in Hugging Face library ?](#12-what-model-are-in-hugging-face-library-)
+  - [1.3. what model category are in Hugging Face library ? and is each category suitable for, what pro and cons each category has?](#13-what-model-category-are-in-hugging-face-library--and-is-each-category-suitable-for-what-pro-and-cons-each-category-has)
+
+
+## 1.1. what are the most famous AI model repositories?
 
 Several AI model repositories and platforms host pretrained models, research implementations, and various tools. These repositories often serve as a go-to place for researchers and practitioners looking for state-of-the-art models and solutions. Some of the most famous AI model repositories include:
 
@@ -52,7 +58,7 @@ Several AI model repositories and platforms host pretrained models, research imp
 
 When using models from these repositories, especially for commercial applications, it's essential to consider licensing restrictions, understand the model's capabilities and limitations, and always ensure that the use case aligns with ethical guidelines.
 
-## what model are in Hugging Face library ?
+## 1.2. what model are in Hugging Face library ?
 
 Hugging Face's `transformers` library offers a vast number of pre-trained models and architectures. These models span a wide range of tasks in natural language processing. As of my last training data in January 2022, the library includes (but is not limited to):
 
@@ -110,7 +116,7 @@ And many more, including models optimized for specific languages (like German, C
 
 Hugging Face's library is constantly updated with the introduction of new models and architectures from the research community. To get a comprehensive list of models available in the `transformers` library at any given time, you can refer to the [Hugging Face Model Hub](https://huggingface.co/models).
 
-## what model category are in Hugging Face library ? and is each category suitable for, what pro and cons each category has?
+## 1.3. what model category are in Hugging Face library ? and is each category suitable for, what pro and cons each category has?
 
 Hugging Face's `transformers` library categorizes models based on their architectures. Each architecture is designed to solve specific types of tasks, though many of them are versatile and can be adapted for various NLP challenges.
 
