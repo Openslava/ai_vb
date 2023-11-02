@@ -6,6 +6,7 @@
   - [which are used for generative AI ?](#which-are-used-for-generative-ai-)
   - [what is generative AI and what main task it is designed for ?](#what-is-generative-ai-and-what-main-task-it-is-designed-for-)
   - [is there any industry standards and classification for generative AI ?](#is-there-any-industry-standards-and-classification-for-generative-ai-)
+  - [any recomended reading about generative AI ?](#any-recomended-reading-about-generative-ai-)
 
 
 ## what types of AI models exists ?
@@ -167,3 +168,35 @@ As of my last training cut-off in January 2022, there isn't a universally accept
    - Generative models are often evaluated using metrics that help determine the quality and diversity of their outputs. Common metrics include the Inception Score (IS), Frechet Inception Distance (FID), and others.
 
 It's worth noting that the field of AI, and especially generative AI, is rapidly evolving. While some categorizations and terminologies are widely accepted, the nuances can vary based on the researcher's or institution's preferences. Industry standards and best practices may emerge as the field matures and as applications of generative AI become more widespread in the industry. If you're interested in the latest standards and classifications, consulting recent literature, conferences (like NeurIPS, ICML, or CVPR), and industry groups or consortiums is a good approach.
+
+
+## any recomended reading about generative AI ?
+
+Certainly! Generative AI is a rich and expanding field, and there are many resources ranging from introductory material to advanced research papers. Here's a mix of resources for different levels of familiarity:
+
+1. **Books**:
+   - **"Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play"** by David Foster: This is a hands-on introduction to generative models using Python and TensorFlow. It's a great starting point if you're new to the topic.
+   - **"Deep Learning"** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: While it covers deep learning broadly, it has a dedicated section on generative models, and the book is written by pioneers in the field. Ian Goodfellow is notably the inventor of GANs.
+
+2. **Online Courses**:
+   - **Coursera's Deep Learning Specialization** by Andrew Ng: Specifically, the courses on Structuring Machine Learning Projects and Convolutional Neural Networks have sections on generative models.
+   - **Fast.ai's Practical Deep Learning for Coders**: Offers some sessions on generative models.
+
+3. **Research Papers**: If you're ready to dive deep, these seminal papers will provide a solid foundation:
+   - **"Generative Adversarial Nets"** by Ian Goodfellow et al.: The original paper introducing GANs.
+   - **"Auto-Encoding Variational Bayes"** by Kingma and Welling: Introduces the Variational Autoencoder (VAE).
+   - **"Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks"** by Radford et al.: An influential paper on using GANs with deep convolutional networks (DCGANs).
+
+4. **Websites & Blogs**:
+   - **Distill.pub**: An online journal dedicated to clear explanations of machine learning concepts. They have some articles on generative models with interactive visualizations.
+   - **OpenAI's Blog**: OpenAI has been at the forefront of generative models, especially with models like GPT-2 and GPT-3. Their blog has detailed write-ups and discussions on their latest research.
+
+5. **Conferences**:
+   - If you're interested in the very latest research, proceedings from conferences like **NeurIPS**, **ICML**, **ICLR**, and **CVPR** often feature the latest advancements in generative AI.
+
+6. **Forums & Communities**:
+   - **ArXiv**: A preprint server where most of the latest AI research papers are uploaded. You can search for "generative models" or related terms.
+   - **Reddit's r/MachineLearning**: A community that often discusses the latest trends, papers, and developments in machine learning, including generative AI.
+
+Starting with some of the introductory resources and then delving into research papers can help build a comprehensive understanding of generative AI.
+
