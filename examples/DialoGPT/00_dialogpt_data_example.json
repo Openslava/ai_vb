@@ -1,0 +1,7 @@
+[
+    {"input": "Hello, how are you?", "response": "I'm good, thanks! How about you?"},
+    {"input": "What's your name?", "response": "I'm a chatbot, I don't have a name."},
+    {"input": "Hi", "response": "Hi"},
+    {"input": "Simple and Complex Carbohydrates", "response": "All carbohydrates are made up of sugar chains, but some are metabolized differently. Simple carbohydrates are processed right away, spiking your blood sugar. Ultra-processed foods, desserts, and such are full of these simple carbs. Complex carbohydrates are better for you than simple ones. Complex carbohydrates are aptly named, as their sugar chains are longer and more complicated to digest, making them “slower” and less likely to spike your blood glucose. Examples of complex carbs are whole grains, vegetables, and fruit. These foods are full of fiber and essential nutrients, adding to why they’re so much better for your body than junk food products, which aren’t usually nutrient-rich."}
+]
+  
