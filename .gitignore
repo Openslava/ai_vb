@@ -1,5 +1,6 @@
 # any intermediate folders will be called build
 */build/
+openai-env
 
 
 # Byte-compiled / optimized / DLL files
