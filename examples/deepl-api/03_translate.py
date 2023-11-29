@@ -10,7 +10,7 @@ env_server_url = "DEEPL_SERVER_URL"
 
 
 def main() -> None:
-    auth_key = 'e6f7de58-89e5-4cdc-b1cc-918c98e8bc6d:fx' #os.getenv(env_auth_key)
+    auth_key = os.getenv(env_auth_key)
     server_url = 'https://api-free.deepl.com' # os.getenv(env_server_url)
     file_name = './test.txt'
     if auth_key is None:
