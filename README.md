@@ -1,5 +1,5 @@
 # ai_vb
-Vilaim's  generative AI model
+Viliam's  generative AI model
 
 
 ```bash

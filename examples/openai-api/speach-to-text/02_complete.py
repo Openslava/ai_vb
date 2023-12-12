@@ -9,12 +9,28 @@
 
 # open file 
 
+import argparse
 from openai import OpenAI
+
+# Create an ArgumentParser object
+parser = argparse.ArgumentParser(description='transcript audio file OpensIA usage --source <filename.mp3> --to <sk|en|ro|...>')
+
+# Define arguments with default values
+parser.add_argument('--source',    type=str, default='./build/example.transcript.complete.txt', help='Source text file')
+parser.add_argument('--to',        type=str, default='Slovak', choices=['Romanian', 'English'], help='Translate into language')
+parser.add_argument('--model',     type=str, default='gpt-4', help='Model to be used for translation')
+arguments = parser.parse_args()
+arg_source = arguments.source
+arg_to = arguments.to
+arg_model = arguments.model
+
 client = OpenAI()
 # "You are a helpful assistant that speach Romanian. Your task is to correct any spelling discrepancies in the transcribed text. Only add necessary punctuation such as periods, commas, and capitalization, and use only the context provided."
 
 # adjust 
-system_prompt = "You are a helpful assistant that speach Romanian. Your task is to correct any spelling discrepancies in the transcribed text. Only add necessary punctuation such as periods, commas, and capitalization, and use only the context provided. The text is spoken by female speaker."
+# system_prompt = "You are a helpful assistant that speach Romanian. Your task is to correct any spelling discrepancies in the transcribed text. Only add necessary punctuation such as periods, commas, and capitalization, and use only the context provided. The text is spoken by female speaker."
+
+system_prompt = "You are a helpful assistant that speach " + arg_to + ". Your task is to correct any spelling discrepancies in the transcribed text. Only add necessary punctuation such as periods, commas, and capitalization, and use only the context provided. The text is spoken by female speaker."
 
 def generate_corrected_transcript(temperature, system_prompt, content):
     response = client.chat.completions.create(
@@ -34,9 +50,9 @@ def generate_corrected_transcript(temperature, system_prompt, content):
     return response.choices[0].message.content
 
 corrected_text = ''
-block_size = int(3000)
+block_size = int(5000)
 chunk_count = 1
-file_name = "./build/test.transcipt.txt"
+file_name = arg_source
 # using puthon load text file
 with open(file_name, 'r') as f:
     lines = f.readlines()
@@ -57,5 +73,5 @@ with open(file_name, 'r') as f:
             chunk_count += 1
 
 print('writing result...\n')
-with open(file_name + '.cpmplete.txt', 'w') as ftxt:
+with open(file_name + '_cpmplete.txt', 'w') as ftxt:
     ftxt.write(corrected_text)
