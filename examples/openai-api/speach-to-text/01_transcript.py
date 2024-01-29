@@ -1,13 +1,14 @@
 #
-#
-# inicialisation 
-# python -m venv openai-env
-# source openai-env/bin/activate
-# pip install --upgrade openai
-# export OPENAI_API_KEY="..."
-#
+## use appropriate shell e.g. bash in WSL on Windows
+## inicialisation 
+#  python -m venv openai-env
+#  source openai-env/bin/activate
+#  pip install --upgrade openai
+#  export OPENAI_API_KEY="..."
+#  python ./01_transcript.py  --source  /mnt/g/repo/github/ai/ai_vb/examples/openai-api/speach-to-text/build/w2.mp3 
 
 # convert audio to text
+
 
 import argparse
 from openai import OpenAI
