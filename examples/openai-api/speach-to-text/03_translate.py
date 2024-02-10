@@ -5,7 +5,7 @@
 # source openai-env/bin/activate
 # pip install --upgrade openai
 # export OPENAI_API_KEY="..."
-#
+#  python ./03_translatet.py  --source  ./build/12.txt --from 'Russian' --to 'Slovak' --blok_size 10000 
 
 # open file 
 import json
